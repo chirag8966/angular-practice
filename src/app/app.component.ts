@@ -4,10 +4,11 @@ import { HttpCallComponent } from './components/http-call/http-call.component';
 import { HttpService } from './shared/services/http.service';
 import { AsyncPipe } from '@angular/common';
 import { Observable } from 'rxjs';
+import { DuplicateNumberComponent } from './components/duplicate-number/duplicate-number.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HttpCallComponent, AsyncPipe],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   providers: [HttpService],
