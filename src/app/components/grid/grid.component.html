@@ -1,0 +1,5 @@
+<div class="grid-container" [style.grid-template-columns]="'repeat(' + gridSize + ', 50px)'">
+    @for (item of arrayElem; track $index; let i = $index) {
+    <div class="grid-cell" [style.background-color]="cellColors[i]"></div>
+    }
+</div>
